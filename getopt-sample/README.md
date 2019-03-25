@@ -10,5 +10,5 @@ To build this example, just use the following steps:
 
 After that, you can play with the example
 
-  ./sample -?
-  ./sample -v /dev/video0 -h 720 befehl1 befehl2
+   ./sample -?
+   ./sample -v /dev/video0 -h 720 befehl1 befehl2

@@ -151,7 +151,7 @@ static bool parseArguments ( int argc, char *argv[] )
     optind = 1;   /* start without prog-name */
     do
     {
-        switch ( getopt(argc, argv, "v:l:h:d") )
+        switch ( getopt(argc, argv, "v:l:h:d?") )
         {
             case 'v':
                 if ( optarg )
@@ -224,7 +224,7 @@ static bool parseArguments ( int argc, char *argv[] )
     } while (!Done);
     for ( int i=optind; i<argc; i++ )
     {
-        printf("remaining 'none option' parameter found: %s",argv[i]);
+        printf("remaining 'none option' parameter found: %s\n",argv[i]);
     }
     return true;
 }
@@ -232,14 +232,14 @@ static bool parseArguments ( int argc, char *argv[] )
 static void usage ( void )
 {
     fprintf(stderr, "SYNOPSIS\n");
-    fprintf(stderr, "getopt-sample [options] [parms]\n");
+    fprintf(stderr, "\tgetopt-sample [options] [parms]\n");
     fprintf(stderr, "\nDESCRIPTION\n");
     fprintf(stderr, "\tThis program is just a sample.\n");
     fprintf(stderr, "\nOPTIONS\n");
-    fprintf(stderr, "-h\tvalue for a height.\n");
-    fprintf(stderr, "-v dev\tpath to a device.\n");
-    fprintf(stderr, "-l link\tpath to a link.\n");
-    fprintf(stderr, "-d\tenable debugging.\n");
+    fprintf(stderr, "\t-h\tvalue for a height.\n");
+    fprintf(stderr, "\t-v dev\tpath to a device.\n");
+    fprintf(stderr, "\t-l link\tpath to a link.\n");
+    fprintf(stderr, "\t-d\tenable debugging.\n");
 }
 
 

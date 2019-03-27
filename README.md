@@ -13,3 +13,4 @@ or to remind myself of the usage. ;-)
   allows a handier usage of `stat()` and `lstat()`.
 * **clara-samples:** includes some examples how to use [Clara](https://github.com/catchorg/Clara)
   to parse the command line with C++11 and above.
+* **qt-cli-sample:** is a example how a CLI application with command line parser is done with Qt5.

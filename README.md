@@ -14,3 +14,6 @@ or to remind myself of the usage. ;-)
 * **clara-samples:** includes some examples how to use [Clara](https://github.com/catchorg/Clara)
   to parse the command line with C++11 and above.
 * **qt-cli-sample:** is a example how a CLI application with command line parser is done with Qt5.
+
+### GUI applications
+* **gtkmm-example:** I'm new to `gtkmm`, so I've tried to build a sample using CMake. This is the result.
